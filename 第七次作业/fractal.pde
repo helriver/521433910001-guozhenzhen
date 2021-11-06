@@ -1,7 +1,7 @@
 float a;
 float inc;
 float r;
-float d=3;  //Change this value and see... (bigger number = less squares)
+float d=3;
 int frame = 20;
 float x1, y1, x2, y2, x3, y3, x4, y4;
 
@@ -9,7 +9,6 @@ void setup()
 {
   size(700, 700);
   noFill();
-  //colorMode(HSB);
   x1 = -(width/2) + frame;
   y1 = -(height/2) + frame;
   x2 = (width/2) - frame;
@@ -19,7 +18,6 @@ void setup()
   x4 = x1;
   y4 = y3;
   r = ((x2 - x1) - d) / (x2 - x1);
-  inc = atan(d / (x2 - x1));
   inc = 0.1;
   background(0);
 }
